@@ -7,7 +7,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Identitas Tamu Lama</h1>
                             </div>
-                            <form class="user" method="POST" action="">
+                            <form class="user" method="POST" action="proses_autocomplete.php">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" name="no_ktp" id="no_ktp" placeholder="No KTP" required>
                                 </div>
