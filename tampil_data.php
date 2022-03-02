@@ -48,7 +48,7 @@
                                     while ($data =mysqli_fetch_array($hasil))
                                     {
                                     ?>
-                                        <tr>
+                                        <tr id="<?php echo $data['No_Ktp']; ?>">
                                             <td><?=$no++?></td>
                                             <td><?=$data['No_Ktp']?></td>
                                             <td><?=$data['Tanggal']?></td>
@@ -60,7 +60,7 @@
                                             <td><?=$data['Check_out']?></td>
                                             <td>
                                                 <a href='checkout.php?No_Ktp=<?php echo $data['No_Ktp']; ?>' class="btn btn-primary btn-user btn-block">Check Out</a>
-                                                
+                                                <!-- <button type="button" onclick="checkout(<?php echo $data['No_Ktp']; ?>);" class="btn btn-primary btn-user btn-block)">Check Out</button> -->
                                             </td>
                                         </tr>
 
@@ -70,3 +70,5 @@
                             </div>
                         </div>
                     </div>
+
+ 

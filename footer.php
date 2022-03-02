@@ -11,13 +11,7 @@
     <!-- Custom scripts for all pages-->
     <script src="assets/js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="assets/js/demo/datatables-demo.js"></script>
-
+   
       <!-- sweet alert -->
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
       
@@ -60,6 +54,39 @@
 
 
 </script>
+
+<script type="text/javascript"> 
+
+    function checkout(No_Ktp)
+    {
+        $(document).ready(function()
+        {
+            $.ajax(
+            {
+                type: 'post',
+                url: 'checkout.php',
+                data: 
+                {
+                    checkout:No_Ktp,
+                    action: "update"
+                },
+                success:function(data)
+                {}
+
+            });
+        });
+        
+    }
+
+</script>
+
 </body>
+ <!-- Page level plugins -->
+    <script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="assets/js/demo/datatables-demo.js"></script>
+
 
 </html>
